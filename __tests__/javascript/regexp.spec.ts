@@ -1,6 +1,7 @@
 import {
   lowerCaseOneAlphabet,
-  rawtext
+  rawtext,
+  upperCaseOneAlphabet
 } from '../../src/javascript/regexp'
 
 describe('javascript regexp', () => {
@@ -10,5 +11,9 @@ describe('javascript regexp', () => {
 
   test('lowerCaseOneAlphabet', () => {
     expect(lowerCaseOneAlphabet()).toBe('f');
+  });
+
+  test('upperCaseOneAlphabet', () => {
+    expect(upperCaseOneAlphabet()).toBe('O');
   });
 });
