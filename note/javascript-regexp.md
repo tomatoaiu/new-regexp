@@ -19,7 +19,7 @@ function lowerCaseOneAlphabet (): string {
 ## Upper Case One Alphabet
 ```typescript
 function lowerCaseOneAlphabet (): string {
-  const reg: RegExp = /[a-z]/;
+  const reg: RegExp = /[A-Z]/;
 
   return '123fOo456'.match(reg).pop(); // O
 }
