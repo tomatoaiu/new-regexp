@@ -1,19 +1,19 @@
-import {
-  lowerCaseOneAlphabet,
-  rawtext,
-  upperCaseOneAlphabet
-} from '../../src/javascript/regexp'
+import * as reg from '../../src/javascript/regexp'
 
 describe('javascript regexp', () => {
   test('rawtext', () => {
-    expect(rawtext()).toBe('foo');
+    expect(reg.rawtext()).toBe('foo');
   });
 
   test('lowerCaseOneAlphabet', () => {
-    expect(lowerCaseOneAlphabet()).toBe('f');
+    expect(reg.lowerCaseOneAlphabet()).toBe('f');
   });
 
   test('upperCaseOneAlphabet', () => {
-    expect(upperCaseOneAlphabet()).toBe('O');
+    expect(reg.upperCaseOneAlphabet()).toBe('O');
+  });
+
+  test('number text', () => {
+    expect(reg.numberText()).toBe('1');
   });
 });

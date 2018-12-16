@@ -16,8 +16,15 @@ function upperCaseOneAlphabet (): string {
   return '123fOo456'.match(reg).pop();
 }
 
+function numberText (): string {
+  const reg: RegExp = /[0-9]/;
+
+  return '123fOo456'.match(reg).pop();
+}
+
 export {
   rawtext,
   lowerCaseOneAlphabet,
-  upperCaseOneAlphabet
+  numberText,
+  upperCaseOneAlphabet,
 }

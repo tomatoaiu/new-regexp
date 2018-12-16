@@ -24,3 +24,12 @@ function lowerCaseOneAlphabet (): string {
   return '123fOo456'.match(reg).pop(); // O
 }
 ```
+
+# Number
+```typescript
+function numberText (): string {
+  const reg: RegExp = /[A-Z]/;
+
+  return '123fOo456'.match(reg).pop(); // 1
+}
+```
