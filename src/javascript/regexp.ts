@@ -21,3 +21,9 @@ export function numberText (): string {
 
   return '123fOo456'.match(reg).pop();
 }
+
+export function notText (): string {
+  const reg: RegExp = /[^0-9]/;
+
+  return '123fOo456'.match(reg).pop();
+}

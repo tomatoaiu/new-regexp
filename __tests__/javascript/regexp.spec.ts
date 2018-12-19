@@ -16,4 +16,8 @@ describe('javascript regexp', () => {
   test('number text', () => {
     expect(reg.numberText()).toBe('1');
   });
+
+  test('not text', () => {
+    expect(reg.notText()).toBe('f');
+  });
 });

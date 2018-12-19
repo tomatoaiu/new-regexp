@@ -33,3 +33,12 @@ function numberText (): string {
   return '123fOo456'.match(reg).pop(); // 1
 }
 ```
+
+# Not
+```typescript
+function notText (): string {
+  const reg: RegExp = /[^0-9]/;
+
+  return '123fOo456'.match(reg).pop(); // f
+}
+```
