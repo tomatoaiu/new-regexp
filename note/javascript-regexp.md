@@ -28,7 +28,16 @@ function lowerCaseOneAlphabet (): string {
 # Number
 ```typescript
 function numberText (): string {
-  const reg: RegExp = /[A-Z]/;
+  const reg: RegExp = /[0-9]/;
+
+  return '123fOo456'.match(reg).pop(); // 1
+}
+```
+
+# Number 2
+```typescript
+function numberText (): string {
+  const reg: RegExp = /\d/;
 
   return '123fOo456'.match(reg).pop(); // 1
 }
