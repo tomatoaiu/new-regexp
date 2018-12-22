@@ -51,3 +51,12 @@ function notText (): string {
   return '123fOo456'.match(reg).pop(); // f
 }
 ```
+
+# Not
+```typescript
+function notNumber (): string {
+  const reg: RegExp = /\D/;
+
+  return '123fOo456'.match(reg).pop(); // f
+}
+```

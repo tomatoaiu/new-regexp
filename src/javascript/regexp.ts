@@ -33,3 +33,9 @@ export function notText (): string {
 
   return '123fOo456'.match(reg).pop();
 }
+
+export function notNumber (): string {
+  const reg: RegExp = /\D/;
+
+  return '123fOo456'.match(reg).pop();
+}
