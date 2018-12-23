@@ -28,4 +28,8 @@ describe('javascript regexp', () => {
   test('not number', () => {
     expect(reg.notNumber()).toBe('f');
   });
+
+  test('or text', () => {
+    expect(reg.notNumber()).toBe('f');
+  });
 });

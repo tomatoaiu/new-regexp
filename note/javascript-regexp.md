@@ -60,3 +60,12 @@ function notNumber (): string {
   return '123fOo456'.match(reg).pop(); // f
 }
 ```
+
+# Or
+```typescript
+function orText (): string {
+  const reg: RegExp = /1|f/;
+
+  return '123fOo456'.match(reg).pop(); // f
+}
+```

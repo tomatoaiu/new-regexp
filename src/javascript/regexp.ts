@@ -39,3 +39,9 @@ export function notNumber (): string {
 
   return '123fOo456'.match(reg).pop();
 }
+
+export function orText (): string {
+  const reg: RegExp = /1|f/;
+
+  return '123fOo456'.match(reg).pop();
+}
